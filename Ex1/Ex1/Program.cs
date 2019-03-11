@@ -4,10 +4,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * The namespace Excercise_1 is the namespace of the exercise.
+ * 
+ */
+/// <summary>
+/// The namespace Excercise_1 is the namespace of the exercise
+/// </summary>
 namespace Excercise_1
 {
+
+    /// <summary>
+    /// The Program class
+    /// which holds the Main function.
+    /// </summary>
     class Program
     {
+
+        /// <summary>
+        /// The RunMissions Function
+        /// which gets as parameters
+        /// a List of Missions missions
+        /// and a double val
+        /// and runs all the missions' Calculate function
+        /// in the missions list
+        /// with the double val value
+        /// and prints the Name of the mission and the val
+        /// and the missions' Calculate function's return value
+        /// for the the double val parameter.
+        /// <param name="missions">List of Missions</para>
+        /// <param name="val">double value which is the input parameter
+        /// for the function Calculate of the missions
+        /// in List of Missions missions</para>
+        /// </summary>
         public static void RunMissions(IList<IMission> missions, double val)
         {
             foreach (var m in missions)
@@ -16,6 +45,14 @@ namespace Excercise_1
             }
         }
 
+        /// <summary>
+        /// The PrintAvailableFunctions Function
+        /// which gets as a parameter
+        /// a FunctionsContainer container
+        /// and prints the available functions of it.
+        /// <param name="container">FunctionsContainer to print
+        /// the available functions of it</para>
+        /// </summary>
         public static void PrintAvailableFunctions(FunctionsContainer container)
         {
             var fuctionListNames = container.getAllMissions();
@@ -26,6 +63,14 @@ namespace Excercise_1
             }
             Console.WriteLine("####################################\n");
         }
+
+        /// <summary>
+        /// The Main Function
+        /// which gets as parameters
+        /// the args string array.
+        /// And runs the program.
+        /// <param name="args">the string array of arguments</para>
+        /// </summary>
         public static void Main(string[] args)
         {
             FunctionsContainer funcList = new FunctionsContainer();     // Creating the mission conatiner
