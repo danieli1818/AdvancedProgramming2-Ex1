@@ -22,7 +22,7 @@ namespace Excercise_1
      * and returns a double value.
      */
     /// <summary>
-    /// * class FunctionsContainer
+    /// class FunctionsContainer
     /// this class contains all the functions that were added to it
     /// according to each one's name.
     /// All functions are getting as a parameter a double x
