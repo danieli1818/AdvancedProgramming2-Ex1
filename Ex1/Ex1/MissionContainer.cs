@@ -23,11 +23,27 @@ namespace Excercise_1
         public delegate double func(double x);
         private IDictionary<String, func> dict;
 
+        /*
+         * The FunctionsContainer Constructor
+         * which creates the dictionary of the string to the function.
+         */
         public FunctionsContainer()
         {
             dict = new Dictionary<String, func>();
         }
 
+        /*
+         * The Indexer of the FunctionsContainer class
+         * which its get is getting the function with 
+         * the name of the String str
+         * which we get from the parameter
+         * of the Indexer.
+         * Its set is setting function
+         * with the name of the String str
+         * which we get from the parameter
+         * of the Indexer,
+         * to the value function.
+         */
         public func this[String str]
         {
             get
@@ -44,6 +60,14 @@ namespace Excercise_1
             }
         }
 
+        /*
+         * The getAllMissions function
+         * returns a Collection
+         * of all the names
+         * of the functions
+         * which are contained
+         * in the FunctionContainer.
+         */
         public ICollection<String> getAllMissions() => dict.Keys;
 
 
