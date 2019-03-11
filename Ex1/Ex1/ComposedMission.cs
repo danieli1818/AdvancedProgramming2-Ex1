@@ -36,10 +36,6 @@ namespace Excercise_1
     public class ComposedMission : IMission
     {
 
-        /*
-         * Funcs Property
-         * 
-         */
         /// <summary>
         /// Funcs Property of the class ComposedMission
         /// it's a List of functions which get as a parameter a double
