@@ -20,7 +20,7 @@ namespace Excercise_1
      * which can be an expression
      * which is made by a sequence of little basic expressions.
      * This class has a calculate function
-     * which calculates the expression which it describes
+     * which calculates the expression which it represents.
      * for a given value.
      */
     /// <summary>
@@ -110,6 +110,7 @@ namespace Excercise_1
         /// The ComposedMission class's Constructor.
         /// It Intializes all the members and properties of the class's object.
         /// <param name="name">string name of the mission</para>
+        /// </summary>
         public ComposedMission(string name)
         {
             Funcs = new List<FunctionsContainer.func>();
