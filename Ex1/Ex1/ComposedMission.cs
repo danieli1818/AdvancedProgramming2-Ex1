@@ -26,7 +26,7 @@ namespace Excercise_1
     /// <summary>
     /// The ComposedMission class
     /// which implements the Interface IMission
-    /// describes a composed mission
+    /// represents a composed mission
     /// which can be an expression
     /// which is made by a sequence of little basic expressions.
     /// This class has a calculate function
