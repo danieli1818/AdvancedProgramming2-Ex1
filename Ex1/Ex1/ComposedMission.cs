@@ -4,11 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * The namespace Excercise_1 is the namespace of the exercise
+ * 
+ */
 namespace Excercise_1
 {
+    /*
+     * The ComposedMission class
+     * which implements the Interface IMission
+     * describes a composed mission
+     * which can be an expression
+     * which is made by a sequence of little basic expressions.
+     * This class has a calculate function
+     * which calculates the expression which it describes
+     * for a given value.
+     */
     public class ComposedMission : IMission
     {
 
+        /*
+         * Funcs Property
+         * 
+         */
         private IList<FunctionsContainer.func> Funcs
         {
             get;
