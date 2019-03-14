@@ -41,7 +41,7 @@ namespace Excercise_1
         /// it's a List of functions which get as a parameter a double
         /// and returns a double.
         /// </summary>
-        private IList<FunctionsContainer.func> Funcs
+        private IList<FunctionsContainer.Func> Funcs
         {
             get;
             set;
@@ -113,7 +113,7 @@ namespace Excercise_1
         /// </summary>
         public ComposedMission(string name)
         {
-            Funcs = new List<FunctionsContainer.func>();
+            Funcs = new List<FunctionsContainer.Func>();
             Name = name;
             Type = "Composed";
             OnCalculate = null;
@@ -127,7 +127,7 @@ namespace Excercise_1
         /// <param name="func">function to concatenate to the expression</para>
         /// <retValue>ComposedMission of this to enable fluent programming</retValue>
         /// </summary>
-        public ComposedMission Add(FunctionsContainer.func func)
+        public ComposedMission Add(FunctionsContainer.Func func)
         {
             Funcs.Add(func);
             return this;

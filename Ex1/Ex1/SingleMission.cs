@@ -29,7 +29,7 @@ namespace Excercise_1
         /// it's a function which gets as a parameter a double
         /// and returns a double.
         /// </summary>
-        private FunctionsContainer.func Func
+        private FunctionsContainer.Func Func
         {
             get;
             set;
@@ -98,7 +98,7 @@ namespace Excercise_1
         /// the object of the class holds</para>
         /// <param name="name">string name of the mission</para>
         /// </summary>
-        public SingleMission(FunctionsContainer.func function, string name)
+        public SingleMission(FunctionsContainer.Func function, string name)
         {
             Func = function;
             Name = name;

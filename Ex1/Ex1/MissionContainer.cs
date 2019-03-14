@@ -30,8 +30,8 @@ namespace Excercise_1
     /// </summary>
     public class FunctionsContainer
     {
-        public delegate double func(double x);
-        private IDictionary<String, func> dict;
+        public delegate double Func(double x);
+        private IDictionary<String, Func> dict;
 
         /*
          * The FunctionsContainer Constructor
@@ -43,7 +43,7 @@ namespace Excercise_1
         /// </summary>
         public FunctionsContainer()
         {
-            dict = new Dictionary<String, func>();
+            dict = new Dictionary<String, Func>();
         }
 
         /*
@@ -72,7 +72,7 @@ namespace Excercise_1
         /// <param name="str">A String of the index</param>
         /// <retvalue>The function with str name</retvalue>
         /// </summary>
-        public func this[String str]
+        public Func this[String str]
         {
             get
             {
